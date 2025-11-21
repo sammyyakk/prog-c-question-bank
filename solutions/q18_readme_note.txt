@@ -1,0 +1,1 @@
+Note: For building C files that use math functions (e.g., sqrt), Code::Blocks typically links the math library automatically. If using command line gcc, add -lm.
