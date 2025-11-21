@@ -1,8 +1,8 @@
 /*
  * Q17: Gross Salary Calculator
- * 
+ *
  * Calculate gross salary = Basic + HRA + DA
- * 
+ *
  * Slabs:
  * Basic 1-4000:    HRA 10%, DA 50%
  * Basic 4001-8000:  HRA 20%, DA 60%
@@ -19,7 +19,7 @@ int main(void)
     if (scanf("%lf", &basic) != 1 || basic <= 0)
         return 0;
     double hra_per = 0, da_per = 0;
-    
+
     // Determine slab
     if (basic <= 4000)
     {

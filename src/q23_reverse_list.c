@@ -1,9 +1,9 @@
 /*
  * Q23: Reverse a List
- * 
+ *
  * Reverse array in-place using two-pointer technique.
  * Example: [1, 2, 3, 4, 5] → [5, 4, 3, 2, 1]
- * 
+ *
  * Method: Swap elements from both ends moving towards center.
  */
 
@@ -18,7 +18,7 @@ int main(void)
     int a[1000];
     for (int i = 0; i < n; i++)
         scanf("%d", &a[i]);
-    
+
     // Two-pointer swap
     int i = 0, j = n - 1;
     while (i < j)

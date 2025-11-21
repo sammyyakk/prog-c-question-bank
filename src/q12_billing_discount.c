@@ -1,11 +1,11 @@
 /*
  * Q12: Billing System with Discount
- * 
+ *
  * Calculate bill with discount slabs:
  * < Rs.1000: 5% discount
  * Rs.1000-4999: 10% discount
  * ≥ Rs.5000: 15% discount
- * 
+ *
  * Display itemized bill with total, discount, grand total.
  */
 
@@ -34,13 +34,13 @@ int main(void)
         total += sub;
         printf("%4d  %5.2f  %3d  %8.2f\n", i + 1, price[i], qty[i], sub);
     }
-    double discount_rate = 0.05;  // Default 5%
+    double discount_rate = 0.05; // Default 5%
     if (total >= 1000.0 && total < 5000.0)
-        discount_rate = 0.10;      // 10% for 1000-4999
+        discount_rate = 0.10; // 10% for 1000-4999
     else if (total >= 5000.0)
-        discount_rate = 0.15;      // 15% for 5000+
+        discount_rate = 0.15; // 15% for 5000+
     double discount = total * discount_rate;
-    double grand = total - discount;  // Final amount
+    double grand = total - discount; // Final amount
     printf("------------------------------\n");
     printf("TOTAL: %.2f\n", total);
     printf("Discount %.0f%%: -%.2f\n", discount_rate * 100.0, discount);

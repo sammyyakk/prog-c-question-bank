@@ -1,12 +1,12 @@
 /*
  * Q10: Bubble Sort
- * 
+ *
  * Sorting algorithm that repeatedly swaps adjacent elements if in wrong order.
  * After each pass, largest unsorted element "bubbles up" to correct position.
- * 
+ *
  * Time Complexity: O(n²) worst/average, O(n) best (if already sorted)
  * Space Complexity: O(1) - sorts in-place
- * 
+ *
  * Optimization: Stop early if no swaps occur (array is sorted).
  */
 

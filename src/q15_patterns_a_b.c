@@ -1,11 +1,11 @@
 /*
  * Q15: Number Patterns
- * 
+ *
  * Pattern (a):    Pattern (b):
  * 1               1
  * 1 2             2 2
  * 1 2 3           3 3 3
- * 
+ *
  * Pattern (a): Print numbers 1 to i
  * Pattern (b): Print number i, i times
  */

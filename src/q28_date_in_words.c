@@ -1,3 +1,17 @@
+/*
+ * Q28: Date in Words
+ *
+ * Convert numeric date to word format.
+ * Example: 16, 7, 1992 → "16th July, 1992"
+ *
+ * Suffix rules:
+ * 1, 21, 31 → st
+ * 2, 22 → nd
+ * 3, 23 → rd
+ * Others → th
+ * Exception: 11, 12, 13 → th (not 11st, 12nd, 13rd)
+ */
+
 #include <stdio.h>
 
 const char *month_name(int m)
@@ -35,6 +49,7 @@ const char *month_name(int m)
 
 const char *suffix(int d)
 {
+    // Handle special case: 11, 12, 13 always get "th"
     if (d % 100 >= 11 && d % 100 <= 13)
         return "th";
     switch (d % 10)

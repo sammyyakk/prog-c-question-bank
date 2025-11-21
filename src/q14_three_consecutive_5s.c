@@ -1,9 +1,9 @@
 /*
  * Q14: Three Consecutive 5s
- * 
+ *
  * Check if a number contains three consecutive 5s (555).
  * Example: 345559 → YES, 1353554 → NO
- * 
+ *
  * Logic: Track consecutive 5 count while extracting digits.
  */
 
@@ -14,11 +14,11 @@ int main(void)
 {
     int n;
     printf("Enter a number: ");
-    if (scanf("%d", &n) != 1)  // Changed from long long to int
+    if (scanf("%d", &n) != 1) // Changed from long long to int
         return 0;
     if (n < 0)
         n = -n;
-    int count = 0, found = 0;  // count tracks consecutive 5s
+    int count = 0, found = 0; // count tracks consecutive 5s
     if (n == 0)
         count = 0;
     while (n > 0)

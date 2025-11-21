@@ -1,3 +1,12 @@
+/*
+ * Q30: Sorting and Binary Search Menu
+ *
+ * Implement three algorithms:
+ * 1. Bubble Sort - O(n²): Compare adjacent, swap if wrong order
+ * 2. Insertion Sort - O(n²): Insert each element into sorted portion
+ * 3. Binary Search - O(log n): Divide and conquer (requires sorted array)
+ */
+
 #include <stdio.h>
 
 void print_array(int a[], int n)
@@ -14,7 +23,7 @@ void print_array(int a[], int n)
 void bubble_sort(int a[], int n)
 {
     for (int i = 0; i < n - 1; i++)
-        for (int j = 0; j < n - 1 - i; j++)
+        for (int j = 0; j < n - 1 - i; j++) // Each pass bubbles max to end
             if (a[j] > a[j + 1])
             {
                 int t = a[j];
@@ -28,12 +37,13 @@ void insertion_sort(int a[], int n)
     for (int i = 1; i < n; i++)
     {
         int key = a[i], j = i - 1;
+        // Shift elements right to make space
         while (j >= 0 && a[j] > key)
         {
             a[j + 1] = a[j];
             j--;
         }
-        a[j + 1] = key;
+        a[j + 1] = key; // Insert key at correct position
     }
 }
 

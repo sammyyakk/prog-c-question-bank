@@ -1,9 +1,9 @@
 /*
  * Q7: Print Binary Representation
- * 
+ *
  * Convert decimal to binary by repeatedly dividing by 2.
  * Collect remainders in reverse order.
- * 
+ *
  * Example: 13 decimal
  * 13 ÷ 2 = 6 remainder 1
  *  6 ÷ 2 = 3 remainder 0

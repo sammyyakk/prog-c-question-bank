@@ -1,5 +1,6 @@
 /* Q31: Calculate power using loop (not recursion)
  * Formula: x^n = x * x * x * ... (n times)
+ * Note: May overflow for large base/exp combinations
  */
 #include <stdio.h>
 
@@ -17,12 +18,12 @@ int main(void)
         return 0;
     }
 
-    long long result = 1;
+    int result = 1; // Changed from long long to int
     for (int i = 0; i < exp; i++)
     {
         result *= base;
     }
 
-    printf("%d^%d = %lld\n", base, exp, result);
+    printf("%d^%d = %d\n", base, exp, result);
     return 0;
 }

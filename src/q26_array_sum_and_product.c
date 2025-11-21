@@ -1,3 +1,13 @@
+/*
+ * Q26: Element-wise Array Operations
+ *
+ * Given arrays A and B, create:
+ * C[i] = A[i] + B[i]  (element-wise sum)
+ * D[i] = A[i] × B[i]  (element-wise product)
+ *
+ * Example: A=[1,2,3], B=[4,5,6] → C=[5,7,9], D=[4,10,18]
+ */
+
 #include <stdio.h>
 
 int main(void)
@@ -13,10 +23,12 @@ int main(void)
     printf("Enter %d elements of B:\n", n);
     for (int i = 0; i < n; i++)
         scanf("%d", &B[i]);
+
+    // Calculate C and D
     for (int i = 0; i < n; i++)
     {
-        C[i] = A[i] + B[i];
-        D[i] = A[i] * B[i];
+        C[i] = A[i] + B[i]; // Sum
+        D[i] = A[i] * B[i]; // Product
     }
     printf("C (sum): ");
     for (int i = 0; i < n; i++)

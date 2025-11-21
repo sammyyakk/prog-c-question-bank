@@ -1,9 +1,9 @@
 /*
  * Q18: Fahrenheit to Celsius Table
- * 
+ *
  * Formula: C = (5/9)(F - 32)
  * IMPORTANT: Use 5.0/9.0 not 5/9 (integer division gives 0!)
- * 
+ *
  * Print table from -40°F to 220°F in steps of 10.
  */
 

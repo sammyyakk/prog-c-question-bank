@@ -1,3 +1,12 @@
+/*
+ * Q25: Triangle Area and Perimeter
+ *
+ * Given three sides a, b, c:
+ * Perimeter: P = a + b + c
+ * Area (Heron's formula): A = √(s(s-a)(s-b)(s-c))
+ *   where s = (a+b+c)/2 is the semi-perimeter
+ */
+
 #include <stdio.h>
 #include <math.h>
 
@@ -5,11 +14,11 @@ double perim(double a, double b, double c) { return a + b + c; }
 
 double area(double a, double b, double c)
 {
-    double s = (a + b + c) / 2.0;
+    double s = (a + b + c) / 2.0; // Semi-perimeter
     double val = s * (s - a) * (s - b) * (s - c);
     if (val <= 0)
-        return 0.0; // simple guard
-    return sqrt(val);
+        return 0.0;   // Invalid triangle
+    return sqrt(val); // Heron's formula
 }
 
 // As per prompt prototypes (simplified to single value)

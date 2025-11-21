@@ -1,6 +1,6 @@
 /*
  * Q16: Count Odd, Even, and Negative
- * 
+ *
  * Read exactly 10 integers and count:
  * - How many are even
  * - How many are odd
@@ -18,7 +18,7 @@ int main(void)
         if (scanf("%d", &x) != 1)
             return 0;
         if (x < 0)
-            neg++;  // Count negatives separately
+            neg++; // Count negatives separately
         if (x % 2 == 0)
             even++;
         else
